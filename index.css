@@ -1,0 +1,339 @@
+/* --------------- Navbar ---------------- */
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #f6f4f2;
+  z-index: 1;
+}
+.logo h1 {
+  margin-top: -0.2em;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  color: hsl(0, 90%, 49%);
+  font-family: "Crimson Text", serif;
+}
+h1 span {
+  color: rgb(8, 7, 7);
+  font-size: 150%;
+  font-family: cursive;
+}
+
+/* End of logo  */
+
+/* --------------- End of Navbar ---------------- */
+/* --------------- Hero ---------------- */
+.hero {
+  min-height: calc(100vh - 35px);
+  background: url("zak.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------- End of Hero ---------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Abril Fatface", serif;
+}
+
+/* Fixed footer.
+* --------------------------------------- */
+
+footer {
+  bottom: 0px;
+  position: fixed;
+  height: 35px;
+  display: block;
+  width: 100%;
+  background-color: #f6f4f2;
+  z-index: 9;
+  text-align: center;
+  color: hsl(0, 0%, 2%);
+  padding: 20px 0 0 0;
+}
+
+footer .ftcopyRight {
+  margin-top: -0.7em;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 6em;
+  width: 15em;
+  border-radius: 10%;
+  border: 0px solid #000;
+  top: -9em;
+  left: 3em;
+  align-items: center;
+}
+
+#profile {
+  border: 2px solid white;
+  background: transparent;
+  text-transform: uppercase;
+  color: white;
+  height: auto;
+  width: fit-content;
+  padding: 5px 10px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  background: #ed3330;
+}
+
+#profile {
+  margin-top: 1em;
+}
+#profile h4 {
+  margin-top: -0.2em;
+  margin-left: 0.5em;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 1.9em;
+  font-weight: bolder;
+  text-align: center;
+}
+/* adding circle inside the images */
+#profile img {
+  display: block;
+  text-decoration: none;
+
+  border: 0.2em solid rgb(3, 3, 3);
+  padding: 0.2em;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+  margin-left: -0.6em;
+  margin-top: -0.1em;
+  background: #ed3330;
+}
+
+#profile:hover,
+#about:hover {
+  cursor: pointer;
+  background: #eeeff3;
+  color: #0a0a0a;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+}
+
+.zakbio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #e60c48;
+  background-color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-family: "Abril Fatface", serif;
+  text-transform: capitalize;
+}
+
+.zakbio .myPic {
+  width: 5em;
+  height: auto;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  margin: 5px auto 10px auto;
+}
+
+.profile_name h3 {
+  transform: scale(1);
+  display: flex;
+  justify-content: center;
+}
+
+.profile_title h5 {
+  transform: scale(1.1);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.email h5 {
+  text-align: start;
+  margin-left: 2.4em;
+  margin-top: -1.8em;
+  line-height: 1em;
+  display: block;
+  color: #000;
+  margin-bottom: 2em;
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  font-size: 0.9em;
+}
+.hleis {
+  font-family: "Crimson Text", serif;
+  font-weight: 700;
+  margin-left: 2.4em;
+  margin-top: -1.8em;
+}
+.educa h5 {
+  display: flex;
+  justify-content: center;
+  margin-left: 2.4em;
+  font-size: 1em;
+  margin-top: -1.8em;
+  line-height: 1em;
+  text-transform: capitalize;
+  font-family: "Crimson Text", serif;
+}
+.educa img {
+  margin-top: -0.5em;
+}
+.leis img {
+  margin-top: -0.4em;
+}
+
+.hleis li {
+  list-style: none;
+  display: flex;
+  display: inline-flex;
+  text-align: center;
+  margin-left: 0.2em;
+}
+
+.educa img,
+.email img,
+.leis img {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border: 0.3em solid black;
+  border-radius: 50%;
+  padding: 0.1em;
+  transition: all 0.5s linear;
+}
+
+.email img {
+  margin-top: -0.3em;
+}
+
+.educa img:hover,
+.email img:hover,
+.leis img:hover {
+  background: #0aeb15;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.email a {
+  text-decoration: none;
+}
+
+.zakmodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 1em;
+  width: fit-content;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+.zakmodal.active {
+  display: block;
+}
+
+/* the color of the modal popup */
+.zakmodal .modaldetail {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: 3px solid hsl(184, 88%, 3%);
+  width: 80%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.closeX {
+  display: flex;
+  color: #e60c48;
+  position: absolute;
+  top: 0em;
+  right: -0em;
+  text-decoration: none;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.closediv .closeX:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.closediv h4 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.5;
+  background-color: #e3e3e3;
+  color: #000;
+  font-family: "Work Sans", sans-serif;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 290px) {
+  .closediv h4 {
+    font-size: 14px;
+  }
+}
